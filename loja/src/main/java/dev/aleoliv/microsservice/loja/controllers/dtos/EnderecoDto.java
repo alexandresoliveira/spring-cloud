@@ -30,4 +30,9 @@ public class EnderecoDto {
 		this.estado = estado;
 	}
 
+	@Override
+	public String toString() {
+		return "EnderecoDto [rua=" + rua + ", numero=" + numero + ", estado=" + estado + "]";
+	}
+
 }

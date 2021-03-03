@@ -3,12 +3,10 @@ server:
   port: 8888
   
 spring:
-  profiles:
-    active:
-    - native
   cloud:
     config:
       server:
-        native:
-          search-locations:
-          - /Users/aleoliv/developer/projects/workspaces/sts4/spring-cloud/cloud-repo
+        git:
+          default-label: main
+          uri: https://github.com/alexandresoliveira/spring-cloud      
+          search-paths: cloud-configs/fornecedor, cloud-configs/loja, cloud-configs/transportador
